@@ -14,8 +14,8 @@ This is a script to create custom coloured papirus folder icons which can then b
 2. Also, make sure you have the papirus-folders script installed to your home via [this](https://github.com/PapirusDevelopmentTeam/papirus-folders#install) method.
 3. Clone this repository and change to cloned directory:
     ```
-    git clone https://github.com/
-    cd 
+    git clone https://github.com/Vibhav201/Custom-Papirus-Folder-Icons
+    cd Custom-Papirus-Folder-Icons
     ```
 4. The [`changecolours.sh`]() script is the script where you have to specify the colour details. Specify icon colour names (`at line 4`) separated by spaces. <br>
     For example, `colors=(selection comment cyan green orange pink purple red yellow)`
