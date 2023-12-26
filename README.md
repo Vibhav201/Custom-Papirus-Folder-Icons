@@ -4,10 +4,10 @@ This is a script to create custom coloured papirus folder icons which can then b
 ## Colour Specification
 ![](assets/Images/ColourSpec.png)
 
-- 1 represents the '`col*`' values in the script and there can be multiple of these. Its the primary colour for the icon.
-- 2 represents the '`sc_col*`' values in the script and there is an `sc-col` value for each `col` value. Its the secondary colour for the icon.
-- 3 represents the '`file_color`' and its the colour of the middle file section. 
-- 4 represents the '`symbol_color`' and its the colour of the center symbol. 
+- 1 represents the `col*` values in the script and there can be multiple of these. Its the primary colour for the icon.
+- 2 represents the `sc_col*` values in the script and there is an `sc_col` value for each `col` value. Its the secondary colour for the icon.
+- 3 represents the `file_color` and its the colour of the middle file section.
+- 4 represents the `symbol_color` and its the colour of the center symbol.
 
 ## Usage
 1. Make sure You have [Papirus Icon Theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) installed (preferably in `~/.local/share/icons`)
@@ -17,14 +17,14 @@ This is a script to create custom coloured papirus folder icons which can then b
     git clone https://github.com/Vibhav201/Custom-Papirus-Folder-Icons
     cd Custom-Papirus-Folder-Icons
     ```
-4. The [`changecolours.sh`]() script is the script where you have to specify the colour details. Specify icon colour names (`at line 4`) separated by spaces. <br>
+4. The [`changecolours.sh`](./changecolours.sh) script is the script where you have to specify the colour details. Specify icon colour names (`at line 4`) separated by spaces. <br>
     For example, `colors=(selection comment cyan green orange pink purple red yellow)`
 5. Specify the *primary colours* values in the same order as the previous step (`from line 13`) in HEX format (without the `#`).
 6. Specify the respective *secondary colours* (`from line 24`) similarly.
-7. Specify the *file section color* with the ;`file_color`' variable (`at line 34`).
-8. Specify the *center symbol color* with the '`symbol_color`' (`at line 35`)
-9. Specify the *theme name* in the place of '`dracula`' (`at line 49`).
-10. Specify the *flavour name* in the place of '`std`' (`at line 50`).
+7. Specify the *file section color* with the `file_color` variable (`at line 34`).
+8. Specify the *center symbol color* with the `symbol_color` (`at line 35`)
+9. Specify the *theme name* in the place of `dracula` (`at line 49`).
+10. Specify the *flavour name* in the place of `std` (`at line 50`).
 > NOTES: <br> 
     1. Remove '`dark-`' from `line 49` if your theme doesn't have flavours and you don't want to specify a flavour name. <br>
     2. Your icon files will be named as `*-theme-flavour-color-*.svg`
